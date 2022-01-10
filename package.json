@@ -12,7 +12,7 @@
     "lighthouse:desktop": "lighthouse http://localhost:3000/ --headless --preset=desktop --view --output html --output-path ./lighthouse.html",
     "lighthouse:mobile": "lighthouse http://localhost:3000/ --headless --preset=desktop --view --output html --output-path ./lighthouse.html",
     "prepare": "husky install",
-    "commit": "clear && git-cz",
+    "commit": "cls && git-cz",
     "prettier": "prettier --config .prettierrc --write"
   },
   "dependencies": {
