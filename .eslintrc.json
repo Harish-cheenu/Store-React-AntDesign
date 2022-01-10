@@ -1,7 +1,7 @@
 {
   "env": {
     "browser": true,
-    "es2021": true
+    "es6": true
   },
   "extends": ["plugin:react/recommended", "airbnb"],
   "parser": "@typescript-eslint/parser",
@@ -17,15 +17,19 @@
       "typescript": {}
     }
   },
-  // "indent": ["error", "tab"],
+
   "plugins": ["react", "@typescript-eslint", "react-hooks"],
   "rules": {
+    "linebreak-style": ["error", "windows"],
     "react/jsx-filename-extension": ["warn", { "extensions": [".tsx"] }],
     "no-use-before-define": "off",
     "@typescript-eslint/no-use-before-define": ["error"],
-    "react-hooks/rules-of-hooks": "error",
+    "react-hooks/rules-of-hooks": "warn",
     "react-hooks/exhaustive-deps": "warn",
     "react/prop-types": "off",
+    "indent": "off",
+    "react/jsx-indent": "off",
+    "react/jsx-indent-props": "off",
     "import/extensions": [
       "error",
       "ignorePackages",

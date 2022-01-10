@@ -1,0 +1,16 @@
+.sider-trigger{
+  position: absolute;
+  top: 15px;
+  right: -25px;
+  width: 25px;
+  height: 25px;
+  line-height: 25px;
+  text-align: center;
+  color: #fff;
+  background: #404040;
+  border-radius: 0 4px 4px 0;
+  cursor: pointer;
+  .anticon {
+    line-height: 25px;
+  }
+}

@@ -1,5 +1,5 @@
 {
-  "name": "cra-antd-template",
+  "name": "store",
   "version": "0.0.1",
   "private": true,
   "scripts": {
@@ -16,6 +16,7 @@
     "prettier": "prettier --config .prettierrc --write"
   },
   "dependencies": {
+    "@ant-design/icons": "^4.7.0",
     "@craco/craco": "^6.4.0",
     "@testing-library/jest-dom": "^5.14.1",
     "@testing-library/react": "^11.2.7",
@@ -52,6 +53,8 @@
     "faker": "^5.5.3",
     "git-cz": "^4.8.0",
     "husky": "^7.0.0",
+    "less": "^4.1.2",
+    "less-loader": "^10.2.0",
     "lighthouse": "^8.6.0",
     "lint-staged": "^11.2.6",
     "postcss": "^7.0.39",
