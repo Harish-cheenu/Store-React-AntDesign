@@ -1,4 +1,4 @@
-.sider-trigger{
+.siderTrigger {
   position: absolute;
   top: 15px;
   right: -25px;
@@ -10,7 +10,7 @@
   background: #404040;
   border-radius: 0 4px 4px 0;
   cursor: pointer;
-  .anticon {
-    line-height: 25px;
-  }
+}
+.anticon {
+  line-height: 25px;
 }
