@@ -14,3 +14,18 @@
 .anticon {
   line-height: 25px;
 }
+.ant-anchor-ink::before{
+  height: 0;
+}
+.ant-anchor-link-title:only-child{
+  color: rgb(71, 115, 121);
+}
+.ant-menu-inline.ant-menu-sub{
+  background-color: #f0f2f5 !important;
+}
+.ant-menu-submenu-title{
+  color: rgb(83, 123, 139);
+}
+.ant-menu-submenu-title:hover{
+  background-color: blue;
+}
