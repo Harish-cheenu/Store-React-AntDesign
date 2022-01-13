@@ -1,8 +1,9 @@
+import axios from 'axios';
 import handleCatchError from './errorHandler.js';
 import handleResponse from './responseHandler.js';
 import {
-     DELETE, GET, PATCH, POST, PUT,
-    } from './apiConstant.js';
+  DELETE, GET, PATCH, POST, PUT, BASE_URL,
+} from './apiConstant.js';
 import createAxiosInstance from './instance.js';
 
 const callApi = async (
@@ -15,8 +16,8 @@ const callApi = async (
   const axiosInstance = createAxiosInstance(customBaseUrl);
   switch (type) {
     case GET:
-      return axiosInstance
-        .get(url)
+      return axios
+        .get(BASE_URL + url)
         .then((response) => handleResponse(url, response, GET))
         .catch((err) => handleCatchError(url, err, props));
 

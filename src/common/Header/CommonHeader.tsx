@@ -1,7 +1,7 @@
 import React from 'react';
 import {
-   Layout, Menu, Dropdown, Button,
-  } from 'antd';
+  Layout, Menu, Dropdown, Button,
+} from 'antd';
 import {
   SoundOutlined,
   UserOutlined,
@@ -13,10 +13,13 @@ const CommonHeader = () => {
   const { Header } = Layout;
   const userMenu = (
     <Menu>
-      <Menu.Item>
-        <a rel="noopener noreferrer" href="/">
-          Log Out
-        </a>
+      <Menu.Item
+        onClick={() => {
+          window.localStorage.setItem('login', 'False');
+          document.location.href = '/';
+        }}
+      >
+        Log Out
       </Menu.Item>
     </Menu>
   );
