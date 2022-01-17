@@ -7,10 +7,11 @@ import CommonSidebar from './common/Sidebar/CommonSidebar';
 import CommonHeader from './common/Header/CommonHeader';
 import Login from './common/Login/Login';
 import Categories from './pages/Categories/index';
-import './App.less';
+import './App.css';
 
 function App() {
   const [loggedIn, setLoggedIn] = useState(true);
+  const [sideState, setSideState] = useState('200px');
   const { Content } = Layout;
   useEffect(() => {
     const go = localStorage.getItem('login');
@@ -24,13 +25,14 @@ function App() {
         <Login setLoggedIn={setLoggedIn} />
       ) : (
         <Layout>
-          <CommonSidebar />
+          <CommonSidebar setSideState={setSideState} />
           <Layout className="site-layout">
             <CommonHeader />
             <Content
+              className="mainContent"
               style={{
                 margin: '10vh 0px 0px calc(101vw - (100vw - 200px))',
-                minHeight: 280,
+                marginLeft: sideState,
                 backgroundColor: '#f0f2f5',
               }}
             >

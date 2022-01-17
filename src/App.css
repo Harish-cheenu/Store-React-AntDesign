@@ -1,0 +1,8 @@
+.mainContent{
+  margin: '10vh 0px 0px calc(101vw - (100vw - 200px))';
+  background-color: '#f0f2f5';
+  transform: all 0.2ms;
+  transition: ease-in-out;
+  height: fit-content;
+  min-height: 100vh;
+}

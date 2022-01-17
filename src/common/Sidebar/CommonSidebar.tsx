@@ -1,6 +1,6 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Layout, Menu } from 'antd';
-// import { a } from 'react-router-dom';
+import './sidebar.css';
 import {
   MenuUnfoldOutlined,
   MenuFoldOutlined,
@@ -8,12 +8,18 @@ import {
   PartitionOutlined,
   ShoppingOutlined,
 } from '@ant-design/icons';
-import './CommonSidebar.less';
 
-const CommonSidebar = () => {
-  //  const { location } = props;
+const CommonSidebar = (props:any) => {
+   const { setSideState } = props;
   const { Sider } = Layout;
   const [collapsed, setCollapsed] = useState(false);
+  const handleCollapsed = () => {
+    setCollapsed(!collapsed);
+  };
+  useEffect(() => {
+    // eslint-disable-next-line no-unused-expressions
+    collapsed ? setSideState('90px') : setSideState('210px');
+  }, [collapsed, setSideState]);
 
   return (
     <Sider
@@ -30,7 +36,7 @@ const CommonSidebar = () => {
           fontFamily: 'monospace',
         }}
       >
-        shrefre
+        Store
       </div>
       <Menu theme="dark" mode="inline" defaultSelectedKeys={['1']}>
         <Menu.Item key="1" icon={<HomeOutlined />}>
@@ -45,7 +51,7 @@ const CommonSidebar = () => {
       </Menu>
       <div
         className="sliderTrigger"
-        onClick={() => setCollapsed(!collapsed)}
+        onClick={() => handleCollapsed()}
         aria-hidden="true"
       >
         {collapsed ? <MenuUnfoldOutlined /> : <MenuFoldOutlined />}
