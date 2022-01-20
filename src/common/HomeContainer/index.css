@@ -1,0 +1,21 @@
+.productCard {
+  width: 230px;
+}
+.ant-card-cover .load {
+  /* opacity: .7; */
+  animation: loading 1s linear infinite alternate;
+}
+.ant-card-cover .loadText {
+  /* opacity: .7; */
+  animation: loading 1s linear infinite alternate;
+}
+
+@keyframes loading {
+  0% {
+    background-color: hsl(200, 20%, 70%);
+  }
+  100% {
+    background-color: hsl(200, 20%, 95%);
+  }
+}
+

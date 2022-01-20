@@ -1,0 +1,27 @@
+.ant-card-cover img{
+    max-height: 220px;
+}
+.ant-card-cover{
+    padding: 5%;
+}
+.card{
+    width: 250px;
+}
+.menu{
+    width: fit-content;
+    display: flex;
+    flex-direction: row;
+}
+.menuItem{
+ width: fit-content;
+ color: #5b99eb !important;
+ font-size: medium;
+ font-weight: 500;
+ margin: 0 5px;
+}
+.menuItem:hover{
+    background-color: #5b99eb;
+}
+.menuItem:hover{
+    color: #ffff !important;
+}
