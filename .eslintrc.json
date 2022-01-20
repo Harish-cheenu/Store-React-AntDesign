@@ -20,7 +20,7 @@
   // "indent": ["error", "tab"],
   "plugins": ["react", "@typescript-eslint", "react-hooks"],
   "rules": {
-    "linebreak-style": ["error", "windows"],
+    "linebreak-style": 0,
     "react/jsx-filename-extension": ["warn", { "extensions": [".tsx"] }],
     "no-use-before-define": "off",
     "@typescript-eslint/no-use-before-define": ["error"],
