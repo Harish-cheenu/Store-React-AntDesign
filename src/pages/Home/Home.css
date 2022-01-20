@@ -1,0 +1,18 @@
+.content {
+  height: 30vh;
+  background: #8a8a92;
+  line-height: 5vh;
+  display: flex !important;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.contentStyle {
+  width: 98%;
+  color: rgb(255, 255, 255);
+  text-align: center;
+}
+.img {
+  width: 100px;
+  height: 100px;
+}
